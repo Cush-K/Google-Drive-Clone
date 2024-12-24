@@ -33,7 +33,7 @@ if os.getenv('FLASK_ENV') == 'testing':
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///:memory:'  # Use a separate test database
 else:
     # app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///google_drive.db'
-    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URI')
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
     
 
 app.config['SECRET_KEY']= os.environ.get('SECRET_KEY')

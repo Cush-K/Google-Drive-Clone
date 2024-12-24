@@ -19,6 +19,7 @@ requests = "*"
 cloudinary = "*"
 pytest = "*"
 python-dotenv = "*"
+werkzeug = "*"
 
 [dev-packages]
 
